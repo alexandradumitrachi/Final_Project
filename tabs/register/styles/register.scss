@@ -1,0 +1,152 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: url(/images/register.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+$grn: rgb(45, 173, 28);
+$redo: rgba(233, 67, 45, 0.671);
+$grn2: rgb(15, 29, 15);
+$wht: rgba(228, 252, 230, 0.911);
+$gre: rgba(105, 92, 92, 0.856);
+$grn3: rgb(232, 250, 232);
+
+#form {
+  background: linear-gradient(62deg, rgb(251, 171, 126) 0%, rgb(247, 207, 105) 100%);
+  border-radius: 3%;
+  box-shadow: 10px 15px rgba(0, 0, 0, 0.26);
+ 
+}
+
+.writing {
+  color: rgb(28, 90, 47);
+}
+
+.box {
+  width: 100%;
+  background-color: $grn3;
+  border: $gre solid 1px;
+  height: 40px;
+}
+
+#btn {
+  background-color: $grn2;
+  color: $wht;
+  border: $grn solid;
+  width: 200px;
+  height: 50px;
+  font-size: larger;
+}
+
+#btn:hover,
+#btn:active {
+  background-color: $grn;
+  transition: 0.2s;
+  color: $grn2;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+form {
+  width: 500px;
+  border: solid $grn2 3px;
+  padding: 20px 50px 50px;
+}
+
+.faulty {
+  color: $grn2;
+  background-color: $redo;
+  font-weight: bold;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 30px;
+  border: solid 2px $redo;
+  display: none;
+}
+
+.para {
+  color: rgb(16, 17, 9);
+}
+h1 {
+  margin: 0 25%;
+}
+
+.home {
+  font-size: 70px;
+  color: black;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+}
+@media all and (min-device-width: 0*320px) {
+  body {
+    font-size: smaller;
+  }
+
+  h1 {
+    margin-left: 0;
+    margin-bottom: 5%;
+  }
+
+  #form {
+    margin: 50% 0;
+    padding: 5%;
+  }
+  .home {
+    font-size: 15px;
+    color: black;
+  }
+  #btn {
+    margin-left: 15%;
+  }
+}
+
+@media all and (min-device-width: 768px) {
+  #form {
+    margin: 20% 0;
+  }
+  #btn {
+    margin-left: 30%;
+  }
+  .home {
+    font-size: 30px;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  #form {
+    margin-bottom: 5%;
+    margin-top: 10%;
+    padding: 2%;
+    text-align: center;
+    font-size: 15px;
+     font-weight: bold;
+  }
+
+  h1 {
+    margin-left: 25%;
+  }
+  .home {
+    font-size: 40px;
+   
+  }
+
+  #btn{
+      margin-left: 0;
+  }
+}

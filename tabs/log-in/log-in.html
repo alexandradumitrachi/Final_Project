@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in!</title>
+    <link rel="stylesheet" href="/tabs/log-in/styles/log-in.css" />
+    <link rel="icon" type="image/png" href="/images/logo.png"> 
+    <script
+      src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"
+      data-auto-a11y="true"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- font-family: 'Open Sans', sans-serif; -->
+</head>
+<body>
+    <nav id="home"><a href="/index.html" >HOME<i class="fas fa-home"></i></a></nav>
+    <form class="form" action="/index.html">
+        <h1>Log in</h1>
+        <label for="theMail" id="fault1" class="writing">EMAIL ADDRESS:</label><br><br>
+        <input type="text" class="box" id="theMail"><br>
+        <p class="para">(Please make sure that you are<br> using the correct email address.)</p>
+        <label for="psw" id="fault2" class="writing">PASSWORD:</label><br><br>
+        <input type="password" class="box" id="psw"><br><br>
+        <input type="checkbox" onclick="show()">Show Password<br><br>
+        <input type="checkbox">Remember me<br><br>
+        <input type="submit" id="btn" value="Login"><br><br>
+        <a href="/tabs/register/register.html" class="register">Not a member yet? <b>Join us</b></a>
+
+    </form>
+
+
+</body>
+<script type="text/javascript" src="log-in.js"></script>
+</html>

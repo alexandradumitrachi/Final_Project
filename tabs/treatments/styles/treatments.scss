@@ -1,0 +1,232 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+$yellow: #f8e2a7;
+$gradient: linear-gradient(#180b11dc, #151024e1);
+$gradient2: linear-gradient(
+  to right top,
+  #d02626,
+  #d62a23,
+  #db2e1f,
+  #e0321b,
+  #e53715,
+  #e9490f,
+  #ec5907,
+  #ef6800,
+  #f08200,
+  #ee9b00,
+  #ebb300,
+  #e5ca0f
+);
+$gradient4: linear-gradient(
+  to right top,
+  #d1d16b,
+  #deb954,
+  #e9a048,
+  #f18448,
+  #f36653,
+  #dd5255,
+  #c54056,
+  #ab3154,
+  #7e2842,
+  #531f2f,
+  #2c151b,
+  #000000
+);
+$gradient5: linear-gradient(
+  to right top,
+  #d68f7f,
+  #ac6363,
+  #844c58,
+  #df76d1d3
+);
+$blk: #522353;
+
+$blurred: linear-gradient(bottom left, rgba(126, 125, 128, 0.8) 0%, rgba(156, 157, 161, 0.8) 45%, rgba(157, 160, 165, 0.6) 60%);
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: $gradient2;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  color: $yellow;
+}
+
+a:hover {
+  color: rgb(194, 153, 221);
+}
+
+@mixin bck_cov {
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin bullet {
+  margin: 10% 35%;
+  border: $blk solid;
+  border-radius: 90px;
+  background-color: $blk;
+  position: relative;
+  box-shadow: 1px 1px 3px 3px rgba(255, 255, 255, 0.116);
+}
+
+@media all and (min-device-width: 0*320px) {
+  header {
+    background-image: url(/images/background_photo_ph.png);
+    @include bck_cov();
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: $yellow;
+    font-size: 15px;
+    margin-top: 0;
+  }
+
+  h2,
+  h3 {
+    margin-left: 6%;
+    margin-right: 8%;
+  }
+  .item1 {
+    background-image: $gradient, url(/images/papaya.jpg);
+  }
+  .item2 {
+    background-image: $gradient, url(/images/rainshower.jpg);
+  }
+  .item3 {
+    background-image: $gradient, url(/images/back.jpg);
+  }
+  .item4 {
+    background-image: $gradient, url(/images/honey.jpg);
+  }
+  .item5 {
+    background-image: $gradient, url(/images/coffee.jpg);
+  }
+  .item6 {
+    background-image: $gradient, url(/images/hamam.jpg);
+  }
+  .item7 {
+    background-image: $gradient, url(/images/chocolate.jpg);
+  }
+  .item8 {
+    background-image: $gradient, url(/images/scrub.jpg);
+  }
+
+  .shop-item {
+    @include bck_cov();
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20%;
+    margin: 2% 1%;
+  }
+
+  .shop-item:hover {
+    background-image: $gradient5;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .minutes {
+    @include bullet();
+    top: 10px;
+  }
+
+  .item-price {
+    @include bullet();
+    bottom: 10px;
+  }
+}
+
+@media all and (min-device-width: 768px) {
+  header {
+    background-image: url(/images/background_top.png);
+    height: 200px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 10px;
+    font-size: larger;
+  }
+
+  h2,
+  h3 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .minutes {
+    top: 0;
+    margin: 5% 35%;
+  }
+
+  .item-price {
+    bottom: 0;
+    margin: 5% 35%;
+  }
+
+  .treatments {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin: 5%;
+    grid-gap: 20px;
+  }
+
+  .shop-item {
+    border-radius: 5%;
+  }
+
+  body {
+    background-image: $gradient4;
+  }
+}
+
+@media all and (min-device-width: 1080px) {
+  header {
+    background-image: linear-gradient(
+        to right top,#814c5c60,
+        #62223669,
+        #2c151b78,
+        #0000006b
+      ),
+      url(/images/background_top.png);
+    height: 300px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 50px;
+    font-size: x-large;
+  }
+
+  .treatments {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin: 0 5%;
+  }
+
+  body {
+    background-image: $blurred, url(/images/treatment.jpeg);
+  }
+
+  .shop-item {
+    margin: 5% 10%;
+    border-radius: 2%;
+    box-shadow: 5px 5px 10px 10px #0000007c;
+  }
+}

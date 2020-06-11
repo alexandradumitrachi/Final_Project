@@ -1,0 +1,185 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#d02626), color-stop(#d62a23), color-stop(#db2e1f), color-stop(#e0321b), color-stop(#e53715), color-stop(#e9490f), color-stop(#ec5907), color-stop(#ef6800), color-stop(#f08200), color-stop(#ee9b00), color-stop(#ebb300), to(#e5ca0f));
+  background-image: linear-gradient(to right top, #d02626, #d62a23, #db2e1f, #e0321b, #e53715, #e9490f, #ec5907, #ef6800, #f08200, #ee9b00, #ebb300, #e5ca0f);
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #f8e2a7;
+}
+
+a:hover {
+  color: #c299dd;
+}
+
+@media all and (min-device-width: 0px) {
+  header {
+    background-image: url(/images/background_photo_ph.png);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  h1,
+  h2,
+  h3 {
+    color: #f8e2a7;
+    font-size: 15px;
+    margin-top: 0;
+  }
+  h2,
+  h3 {
+    margin-left: 6%;
+    margin-right: 8%;
+  }
+  .item1 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#180b11dc), to(#151024e1)), url(/images/papaya.jpg);
+    background-image: linear-gradient(#180b11dc, #151024e1), url(/images/papaya.jpg);
+  }
+  .item2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#180b11dc), to(#151024e1)), url(/images/rainshower.jpg);
+    background-image: linear-gradient(#180b11dc, #151024e1), url(/images/rainshower.jpg);
+  }
+  .item3 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#180b11dc), to(#151024e1)), url(/images/back.jpg);
+    background-image: linear-gradient(#180b11dc, #151024e1), url(/images/back.jpg);
+  }
+  .item4 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#180b11dc), to(#151024e1)), url(/images/honey.jpg);
+    background-image: linear-gradient(#180b11dc, #151024e1), url(/images/honey.jpg);
+  }
+  .item5 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#180b11dc), to(#151024e1)), url(/images/coffee.jpg);
+    background-image: linear-gradient(#180b11dc, #151024e1), url(/images/coffee.jpg);
+  }
+  .item6 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#180b11dc), to(#151024e1)), url(/images/hamam.jpg);
+    background-image: linear-gradient(#180b11dc, #151024e1), url(/images/hamam.jpg);
+  }
+  .item7 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#180b11dc), to(#151024e1)), url(/images/chocolate.jpg);
+    background-image: linear-gradient(#180b11dc, #151024e1), url(/images/chocolate.jpg);
+  }
+  .item8 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#180b11dc), to(#151024e1)), url(/images/scrub.jpg);
+    background-image: linear-gradient(#180b11dc, #151024e1), url(/images/scrub.jpg);
+  }
+  .shop-item {
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20%;
+    margin: 2% 1%;
+  }
+  .shop-item:hover {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#d68f7f), color-stop(#ac6363), color-stop(#844c58), to(#df76d1d3));
+    background-image: linear-gradient(to right top, #d68f7f, #ac6363, #844c58, #df76d1d3);
+  }
+  p {
+    margin-top: 0;
+  }
+  .minutes {
+    margin: 10% 35%;
+    border: #522353 solid;
+    border-radius: 90px;
+    background-color: #522353;
+    position: relative;
+    -webkit-box-shadow: 1px 1px 3px 3px rgba(255, 255, 255, 0.116);
+            box-shadow: 1px 1px 3px 3px rgba(255, 255, 255, 0.116);
+    top: 10px;
+  }
+  .item-price {
+    margin: 10% 35%;
+    border: #522353 solid;
+    border-radius: 90px;
+    background-color: #522353;
+    position: relative;
+    -webkit-box-shadow: 1px 1px 3px 3px rgba(255, 255, 255, 0.116);
+            box-shadow: 1px 1px 3px 3px rgba(255, 255, 255, 0.116);
+    bottom: 10px;
+  }
+}
+
+@media all and (min-device-width: 768px) {
+  header {
+    background-image: url(/images/background_top.png);
+    height: 200px;
+  }
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 10px;
+    font-size: larger;
+  }
+  h2,
+  h3 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .minutes {
+    top: 0;
+    margin: 5% 35%;
+  }
+  .item-price {
+    bottom: 0;
+    margin: 5% 35%;
+  }
+  .treatments {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    margin: 5%;
+    grid-gap: 20px;
+  }
+  .shop-item {
+    border-radius: 5%;
+  }
+  body {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#d1d16b), color-stop(#deb954), color-stop(#e9a048), color-stop(#f18448), color-stop(#f36653), color-stop(#dd5255), color-stop(#c54056), color-stop(#ab3154), color-stop(#7e2842), color-stop(#531f2f), color-stop(#2c151b), to(#000000));
+    background-image: linear-gradient(to right top, #d1d16b, #deb954, #e9a048, #f18448, #f36653, #dd5255, #c54056, #ab3154, #7e2842, #531f2f, #2c151b, #000000);
+  }
+}
+
+@media all and (min-device-width: 1080px) {
+  header {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#814c5c60), color-stop(#62223669), color-stop(#2c151b78), to(#0000006b)), url(/images/background_top.png);
+    background-image: linear-gradient(to right top, #814c5c60, #62223669, #2c151b78, #0000006b), url(/images/background_top.png);
+    height: 300px;
+  }
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 50px;
+    font-size: x-large;
+  }
+  .treatments {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (25%)[4];
+        grid-template-columns: repeat(4, 25%);
+    margin: 0 5%;
+  }
+  body {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(126, 125, 128, 0.8)), color-stop(45%, rgba(156, 157, 161, 0.8)), color-stop(60%, rgba(157, 160, 165, 0.6))), url(/images/treatment.jpeg);
+    background-image: linear-gradient(bottom left, rgba(126, 125, 128, 0.8) 0%, rgba(156, 157, 161, 0.8) 45%, rgba(157, 160, 165, 0.6) 60%), url(/images/treatment.jpeg);
+  }
+  .shop-item {
+    margin: 5% 10%;
+    border-radius: 2%;
+    -webkit-box-shadow: 5px 5px 10px 10px #0000007c;
+            box-shadow: 5px 5px 10px 10px #0000007c;
+  }
+}
+/*# sourceMappingURL=treatments.css.map */

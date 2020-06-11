@@ -1,0 +1,19 @@
+body{
+    background-image: url(/images/background_footer.jpg);
+    
+  
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    color: #dad161;
+    padding:20%;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+}

@@ -1,0 +1,285 @@
+html {
+  background-color: #000000;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+$grn: rgb(45, 173, 28);
+$redo: rgba(233, 120, 45, 0.671);
+$grn2: rgb(15, 29, 15);
+$wht: rgba(228, 252, 230, 0.911);
+$gre: rgba(128, 128, 128, 0.472);
+$greF: rgba(87, 85, 85, 0.952);
+$transparent: rgba(255, 255, 255, 0);
+$fb: rgb(71, 104, 173);
+$tw: rgb(71, 161, 235);
+$ig: rgb(208, 81, 123);
+$blurred: linear-gradient(bottom left, rgba(43, 40, 50, 0.8) 0%, rgba(83, 86, 99, 0.8) 45%, rgba(69, 77, 91, 0.6) 60%);
+
+@mixin bck_cov {
+  background-size: cover;
+  background-position: center;
+}
+
+a {
+  text-decoration: none;
+  border-radius: 50px;
+  border: $grn solid;
+  background-size: 100%;
+  font-size: 3vw;
+  color: $wht;
+}
+
+.tab:hover,
+.tab:active {
+  background-color: $grn;
+  transition: 0.2s;
+  color: $grn2;
+}
+.logo {
+  display: grid;
+  justify-content: center;
+}
+
+.logoPNG {
+  justify-self: center;
+}
+
+h1 {
+  color: $wht;
+}
+
+.middle_1 {
+  background-image: $blurred , url(/images/background_1.png);
+  @include bck_cov();
+  width: 100%;
+  height: 400px;
+}
+
+p {
+  color: $wht;
+}
+
+.middle_2 {
+  background-image: $blurred , url(/images/background_2.png);
+  @include bck_cov();
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.sch {
+  background-color: $gre;
+  color: $wht;
+  margin: 0% 5%;
+  border-radius: 50%;
+  padding: 20px;
+  align-self: center;
+  text-align: center;
+}
+
+footer {
+  background-color: $greF;
+}
+
+.salon {
+  padding: 0;
+  margin: 0;
+  color: $grn2;
+}
+
+.soc {
+  background-color: transparent;
+  border: none;
+}
+.fb {
+  color: $fb;
+}
+
+.tw {
+  color: $tw;
+}
+
+.ig {
+  color: $ig;
+}
+
+@media all and (min-device-width: 0*320px) {
+  h1 {
+    font-size: 33px;
+    padding-top: 10%;
+  }
+
+  #sh {
+    font-size: 2vw;
+  }
+
+  .tab {
+    font-size: 1vw;
+    padding: 10px 30px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-image: url(/images/background_photo_ph.png);
+    @include bck_cov();
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 5vw);
+    grid-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+
+  .logoPNG {
+    width: 4vw;
+    height: 4vw;
+  }
+  .slide {
+    width: 70vw;
+    height: 35vw;
+    border-radius: 10%;
+    padding-top: 1%;
+    margin-left: 7%;
+  }
+
+  #img_pres {
+    align-self: center;
+  }
+
+  .middle_1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .descr {
+    margin-left: 25%;
+  }
+
+  #map {
+    height: 100%;
+    width: 80%;
+    align-self: center;
+  }
+
+  .map {
+    margin-left: 15%;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.social {
+  margin-left: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sm {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+@media all and (min-device-width: 768px) {
+
+
+  h1 {
+    padding: 0;
+  }
+  header {
+    background-image: url(/images/background_top.png);
+    height: 400px;
+  }
+
+  #sh {
+    font-size: 1vw;
+  }
+
+  .tabs {
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 10vw);
+    grid-gap: 20px;
+    padding-top: 10px;
+  }
+
+  .slide {
+    width: 40vw;
+    height: 25vw;
+    margin-left: 40%;
+  }
+  .descr {
+    margin-left: 40%;
+  }
+
+  .sch {
+    margin: 0% 25%;
+    padding: 6px;
+  }
+
+  #map {
+    height: 100%;
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  header {
+    height: 200px;
+  }
+
+  .tab {
+    font-size: 1vw;
+  }
+
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .logoPNG {
+    width: 2vw;
+    height: 2vw;
+  }
+  .slide {
+    width: 25vw;
+    height: 15vw;
+    margin-left: 40%;
+  }
+  .descr {
+    margin-left: 40%;
+    font-size: large;
+  }
+
+  #map {
+    height: 300px;
+    width: 90%;
+  }
+
+  .sch {
+    border-radius: 10%;
+    text-align: center;
+    width: 20vw;
+    font-size: 1.5vw;
+    margin-left: 40%;
+  }
+}

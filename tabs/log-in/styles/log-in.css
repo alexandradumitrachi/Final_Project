@@ -1,0 +1,103 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.767)), to(rgba(172, 55, 109, 0.657))), url(/images/login.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(172, 55, 109, 0.657)), url(/images/login.jpeg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faulty {
+  color: #410322;
+  background-color: rgba(233, 67, 45, 0.671);
+  font-weight: bold;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 30px;
+  border: solid 2px rgba(233, 67, 45, 0.671);
+  display: none;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  border: solid 2px #410322;
+  background-color: #410322;
+  border-radius: 50%;
+  padding: 5px;
+  color: #f1b1bf;
+  position: relative;
+  top: 10px;
+}
+
+.box {
+  width: 100%;
+  background-color: #f1b1bf;
+  border: #410322 solid 1px;
+  height: 30px;
+}
+
+.register {
+  background-color: transparent;
+  border: none;
+}
+
+@media all and (min-device-width: 0px) {
+  .form {
+    color: peachpuff;
+    text-align: center;
+  }
+  .register {
+    color: peachpuff;
+  }
+  #home {
+    position: absolute;
+    top: 2%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media all and (min-device-width: 768px) {
+  .form {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, #ffd6ab 0%, #ffb6b6 90%);
+    padding: 5%;
+    color: #410322;
+    border-radius: 2%;
+  }
+  .register {
+    color: #410322;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  #home {
+    font-size: x-large;
+  }
+  .form {
+    background-image: -webkit-gradient(linear, left top, right top, from(#ff9a8b), color-stop(55%, #ff6a88), to(#ff99ac));
+    background-image: linear-gradient(90deg, #ff9a8b 0%, #ff6a88 55%, #ff99ac 100%);
+    border-radius: 2%;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.623) 10px 10px;
+            box-shadow: rgba(0, 0, 0, 0.623) 10px 10px;
+  }
+}
+/*# sourceMappingURL=log-in.css.map */
