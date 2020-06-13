@@ -2,11 +2,11 @@ let i = 0;
 let images = [];
 let time = 3000;
 
-images[0] = "/images/pic1.jpg";
-images[1] = "/images/pic2.jpg";
-images[2] = "/images/pic3.jpg";
-images[3] = "/images/pic4.jpg";
-images[4] = "/images/pic5.jpg";
+images[0] = "/img/pic1.jpeg";
+images[1] = "/img/pic2.jpeg";
+images[2] = "/img/pic3.jpeg";
+images[3] = "/img/pic4.jpeg";
+images[4] = "/img/pic5.jpeg";
 
 let changeImg = () =>{
     document.slide.src = images[i];

@@ -1,10 +1,23 @@
 html {
   background-color: #000000;
+  width: 100%;
 }
 
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Playfair display", sans-serif;
 }
+
+$Silver-Pink: #B09E99;
+$Misty-Rose: #FEE9E1;
+$Uncleached-Silk: #FAD4C0;
+$Uncleached-Silk-Darker: #dc9a77;
+$Green-Sheen: #64B6AC;
+$Celeste: #C0FDFB;
+$Dark-Grey: #484747;
+$Green-Sky: #396b69;
+
+
+
 
 $grn: rgb(45, 173, 28);
 $redo: rgba(233, 120, 45, 0.671);
@@ -25,16 +38,17 @@ $blurred: linear-gradient(bottom left, rgba(43, 40, 50, 0.8) 0%, rgba(83, 86, 99
 
 a {
   text-decoration: none;
-  border-radius: 50px;
-  border: $grn solid;
+  border-radius: 20px;
+  border: $Uncleached-Silk ;
+  box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.42);
   background-size: 100%;
   font-size: 3vw;
-  color: $wht;
+  color: $Uncleached-Silk;
 }
 
 .tab:hover,
 .tab:active {
-  background-color: $grn;
+  background-color: $Uncleached-Silk;
   transition: 0.2s;
   color: $grn2;
 }
@@ -48,54 +62,32 @@ a {
 }
 
 h1 {
-  color: $wht;
+  font-family: "Cinzel Decorative";
+  font-weight: lighter;
+
 }
 
-.middle_1 {
-  background-image: $blurred , url(/images/background_1.png);
-  @include bck_cov();
-  width: 100%;
-  height: 400px;
-}
+
 
 p {
-  color: $wht;
+  color: $Uncleached-Silk;
 }
 
-.middle_2 {
-  background-image: $blurred , url(/images/background_2.png);
-  @include bck_cov();
-  width: 100%;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
 
-.sch {
-  background-color: $gre;
-  color: $wht;
-  margin: 0% 5%;
-  border-radius: 50%;
-  padding: 20px;
-  align-self: center;
-  text-align: center;
-}
+
 
 footer {
-  background-color: $greF;
+  background-color: $Green-Sky;
 }
 
 .salon {
   padding: 0;
   margin: 0;
-  color: $grn2;
+  color: black;
+  font-size: 10px;
 }
 
-.soc {
-  background-color: transparent;
-  border: none;
-}
+
 .fb {
   color: $fb;
 }
@@ -108,10 +100,38 @@ footer {
   color: $ig;
 }
 
+// Phone Display
+
 @media all and (min-device-width: 0*320px) {
   h1 {
-    font-size: 33px;
-    padding-top: 10%;
+    font-size: 20px;
+    padding: 10% 0;
+  }
+
+  .middle_1 {
+    background-image: $blurred , url(/img/front-pg2.jpeg);
+    @include bck_cov();
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .middle_2 {
+    background-image: $blurred , url(/img/front-pg1.jpeg);
+    @include bck_cov();
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: outset rgb(250, 212, 192) 7px;
+  }
+
+  .sch {
+    color: $Uncleached-Silk;
+    text-align: center;
   }
 
   #sh {
@@ -120,20 +140,23 @@ footer {
 
   .tab {
     font-size: 1vw;
-    padding: 10px 30px;
+    padding: 5px 15px;
+    margin-top: 10px;
   }
 
   body {
     margin: 0;
     padding: 0;
+    
   }
   header {
-    background-image: url(/images/background_photo_ph.png);
+    background-image: url(/img/moon-ph.jpeg);
     @include bck_cov();
-    height: 300px;
+    height: 200px;
     width: 100%;
     margin: 0;
     padding: 0;
+    border-bottom: outset rgb(250, 212, 192) 7px;
   }
 
   .tabs {
@@ -147,16 +170,11 @@ footer {
     padding-right: 20px;
   }
 
-  .logoPNG {
-    width: 4vw;
-    height: 4vw;
-  }
   .slide {
-    width: 70vw;
-    height: 35vw;
-    border-radius: 10%;
-    padding-top: 1%;
-    margin-left: 7%;
+    width: 80vw;
+    height: 50vw;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.31);
   }
 
   #img_pres {
@@ -166,22 +184,27 @@ footer {
   .middle_1 {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    border-bottom: outset rgb(250, 212, 192) 7px;
   }
 
   .descr {
-    margin-left: 25%;
+    text-align: center;
   }
 
   #map {
     height: 100%;
     width: 80%;
     align-self: center;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.31);
   }
 
   .map {
     margin-left: 15%;
+
   }
-}
+
 
 footer {
   display: flex;
@@ -193,6 +216,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  
 }
 
 .sm {
@@ -200,55 +224,98 @@ footer {
   justify-content: center;
   padding-bottom: 2%;
 }
+
+.soc {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+}
+
+// Tablet Display
+
+
 @media all and (min-device-width: 768px) {
 
 
   h1 {
-    padding: 0;
+    padding-bottom: 10%;
+    padding-top: 0;
+    font-size: xx-large;
   }
   header {
-    background-image: url(/images/background_top.png);
-    height: 400px;
+    background-image: url(/img/moon.jpeg);
+    height: 300px;
   }
 
   #sh {
     font-size: 1vw;
   }
 
+  .tab{
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+
   .tabs {
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat(2, 10vw);
     grid-gap: 20px;
-    padding-top: 10px;
+    padding: 0;
+  }
+
+  .middle_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .slide {
     width: 40vw;
     height: 25vw;
-    margin-left: 40%;
+    margin: 0 10px;
   }
   .descr {
-    margin-left: 40%;
+    margin: 25% 5%;
+    
+  font-size: 25px;
+  }
+
+  .middle_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 700px;
   }
 
   .sch {
-    margin: 0% 25%;
-    padding: 6px;
+    font-size: 25px;
   }
 
-  #map {
-    height: 100%;
-    width: 90%;
+  .map {
+    height: 170px;
+    align-self: center;
+    width: 70%;
+    margin:0;
+    padding-left: 15%;
   }
 }
 
+//Desktop Display
+
 @media all and (min-width: 1080px) {
   header {
-    height: 200px;
+    height: 300px;
   }
 
   .tab {
     font-size: 1vw;
+  }
+
+  h1{
+    padding-top: 20%;
+    font-size: 40px;
   }
 
   .tabs {
@@ -256,23 +323,29 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .logoPNG {
-    width: 2vw;
-    height: 2vw;
+  
+  .middle_1{
+    height: 700px;
   }
-  .slide {
-    width: 25vw;
-    height: 15vw;
-    margin-left: 40%;
-  }
-  .descr {
-    margin-left: 40%;
-    font-size: large;
+  .middle_2{
+    height: 900px;
   }
 
-  #map {
+  .slide {
+    width: 30vw;
+    height: 20vw;
+    margin-left: 40%;
+  }
+  
+  .descr {
+
+    font-size: xx-large;
+    margin: 17% 5% 20% 30%;
+  }
+
+  .map {
     height: 300px;
-    width: 90%;
+    width: 80%;
   }
 
   .sch {
@@ -281,5 +354,9 @@ footer {
     width: 20vw;
     font-size: 1.5vw;
     margin-left: 40%;
+  }
+
+  .salon{
+    font-size: 20px;
   }
 }
