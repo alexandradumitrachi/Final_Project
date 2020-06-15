@@ -76,7 +76,7 @@ a:hover {
 
 @media all and (min-device-width: 0*320px) {
   header {
-    background-image: url(/images/background_photo_ph.png);
+    background-image: url(/img/treatments-up.jpeg);
     @include bck_cov();
     height: 200px;
     width: 100%;
@@ -197,13 +197,7 @@ a:hover {
 
 @media all and (min-device-width: 1080px) {
   header {
-    background-image: linear-gradient(
-        to right top,#814c5c60,
-        #62223669,
-        #2c151b78,
-        #0000006b
-      ),
-      url(/images/background_top.png);
+    background-image:$blurred, url(/img/treatments-up.jpeg);
     height: 300px;
   }
 

@@ -7,29 +7,24 @@ html {
   font-family: "Playfair display", sans-serif;
 }
 
-$Silver-Pink: #B09E99;
-$Misty-Rose: #FEE9E1;
-$Uncleached-Silk: #FAD4C0;
+$Silver-Pink: #b09e99;
+$Misty-Rose: #fee9e1;
+$Uncleached-Silk: #fad4c0;
 $Uncleached-Silk-Darker: #dc9a77;
-$Green-Sheen: #64B6AC;
-$Celeste: #C0FDFB;
+$Green-Sheen: #64b6ac;
+$Celeste: #c0fdfb;
 $Dark-Grey: #484747;
 $Green-Sky: #396b69;
-
-
-
-
-$grn: rgb(45, 173, 28);
-$redo: rgba(233, 120, 45, 0.671);
-$grn2: rgb(15, 29, 15);
-$wht: rgba(228, 252, 230, 0.911);
-$gre: rgba(128, 128, 128, 0.472);
-$greF: rgba(87, 85, 85, 0.952);
-$transparent: rgba(255, 255, 255, 0);
+$transparent: #ffffff00;
 $fb: rgb(71, 104, 173);
 $tw: rgb(71, 161, 235);
 $ig: rgb(208, 81, 123);
-$blurred: linear-gradient(bottom left, rgba(43, 40, 50, 0.8) 0%, rgba(83, 86, 99, 0.8) 45%, rgba(69, 77, 91, 0.6) 60%);
+$blurred: linear-gradient(
+  bottom left,
+  #2b2832cc 0%,
+  #535663cc 45%,
+  #454d5b99 60%
+);
 
 @mixin bck_cov {
   background-size: cover;
@@ -39,7 +34,7 @@ $blurred: linear-gradient(bottom left, rgba(43, 40, 50, 0.8) 0%, rgba(83, 86, 99
 a {
   text-decoration: none;
   border-radius: 20px;
-  border: $Uncleached-Silk ;
+  border: $Uncleached-Silk;
   box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.42);
   background-size: 100%;
   font-size: 3vw;
@@ -50,7 +45,7 @@ a {
 .tab:active {
   background-color: $Uncleached-Silk;
   transition: 0.2s;
-  color: $grn2;
+  color: $Dark-Grey;
 }
 .logo {
   display: grid;
@@ -64,17 +59,11 @@ a {
 h1 {
   font-family: "Cinzel Decorative";
   font-weight: lighter;
-
 }
-
-
 
 p {
   color: $Uncleached-Silk;
 }
-
-
-
 
 footer {
   background-color: $Green-Sky;
@@ -86,7 +75,6 @@ footer {
   color: black;
   font-size: 10px;
 }
-
 
 .fb {
   color: $fb;
@@ -109,7 +97,7 @@ footer {
   }
 
   .middle_1 {
-    background-image: $blurred , url(/img/front-pg2.jpeg);
+    background-image: $blurred, url(/img/front-pg2.jpeg);
     @include bck_cov();
     width: 100%;
     height: 500px;
@@ -118,8 +106,16 @@ footer {
     justify-content: center;
   }
 
+  .descr {
+    transition: transform 0.5s ease;
+  }
+
+  .descr:hover {
+    transform: scale(1.1);
+  }
+
   .middle_2 {
-    background-image: $blurred , url(/img/front-pg1.jpeg);
+    background-image: $blurred, url(/img/front-pg1.jpeg);
     @include bck_cov();
     width: 100%;
     height: 500px;
@@ -132,8 +128,12 @@ footer {
   .sch {
     color: $Uncleached-Silk;
     text-align: center;
+    transition: transform 0.5s ease;
   }
 
+  .sch:hover {
+    transform: scale(1.2);
+  }
   #sh {
     font-size: 2vw;
   }
@@ -147,7 +147,6 @@ footer {
   body {
     margin: 0;
     padding: 0;
-    
   }
   header {
     background-image: url(/img/moon-ph.jpeg);
@@ -175,6 +174,7 @@ footer {
     height: 50vw;
     border-radius: 6px;
     box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.31);
+    transition: transform 0.5s ease;
   }
 
   #img_pres {
@@ -202,43 +202,36 @@ footer {
 
   .map {
     margin-left: 15%;
-
   }
 
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
 
-footer {
-  display: flex;
-  flex-direction: column;
-}
+  .social {
+    margin-left: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-.social {
-  margin-left: 80%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  
-}
+  .sm {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+  }
 
-.sm {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 2%;
-}
-
-.soc {
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-}
-
+  .soc {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
 }
 
 // Tablet Display
 
-
 @media all and (min-device-width: 768px) {
-
-
   h1 {
     padding-bottom: 10%;
     padding-top: 0;
@@ -253,7 +246,7 @@ footer {
     font-size: 1vw;
   }
 
-  .tab{
+  .tab {
     padding: 10px 20px;
     font-size: 10px;
   }
@@ -265,7 +258,7 @@ footer {
     padding: 0;
   }
 
-  .middle_1{
+  .middle_1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -278,11 +271,11 @@ footer {
   }
   .descr {
     margin: 25% 5%;
-    
-  font-size: 25px;
+
+    font-size: 25px;
   }
 
-  .middle_2{
+  .middle_2 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -297,7 +290,7 @@ footer {
     height: 170px;
     align-self: center;
     width: 70%;
-    margin:0;
+    margin: 0;
     padding-left: 15%;
   }
 }
@@ -313,7 +306,7 @@ footer {
     font-size: 1vw;
   }
 
-  h1{
+  h1 {
     padding-top: 20%;
     font-size: 40px;
   }
@@ -323,11 +316,11 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  
-  .middle_1{
+
+  .middle_1 {
     height: 700px;
   }
-  .middle_2{
+  .middle_2 {
     height: 900px;
   }
 
@@ -336,9 +329,8 @@ footer {
     height: 20vw;
     margin-left: 40%;
   }
-  
-  .descr {
 
+  .descr {
     font-size: xx-large;
     margin: 17% 5% 20% 30%;
   }
@@ -356,7 +348,7 @@ footer {
     margin-left: 40%;
   }
 
-  .salon{
+  .salon {
     font-size: 20px;
   }
 }

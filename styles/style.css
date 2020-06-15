@@ -10,20 +10,20 @@ html {
 a {
   text-decoration: none;
   border-radius: 20px;
-  border: #FAD4C0;
+  border: #fad4c0;
   -webkit-box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.42);
           box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.42);
   background-size: 100%;
   font-size: 3vw;
-  color: #FAD4C0;
+  color: #fad4c0;
 }
 
 .tab:hover,
 .tab:active {
-  background-color: #FAD4C0;
+  background-color: #fad4c0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  color: #0f1d0f;
+  color: #484747;
 }
 
 .logo {
@@ -45,7 +45,7 @@ h1 {
 }
 
 p {
-  color: #FAD4C0;
+  color: #fad4c0;
 }
 
 footer {
@@ -77,8 +77,8 @@ footer {
     padding: 10% 0;
   }
   .middle_1 {
-    background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(43, 40, 50, 0.8)), color-stop(45%, rgba(83, 86, 99, 0.8)), color-stop(60%, rgba(69, 77, 91, 0.6))), url(/img/front-pg2.jpeg);
-    background-image: linear-gradient(bottom left, rgba(43, 40, 50, 0.8) 0%, rgba(83, 86, 99, 0.8) 45%, rgba(69, 77, 91, 0.6) 60%), url(/img/front-pg2.jpeg);
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#2b2832cc), color-stop(45%, #535663cc), color-stop(60%, #454d5b99)), url(/img/front-pg2.jpeg);
+    background-image: linear-gradient(bottom left, #2b2832cc 0%, #535663cc 45%, #454d5b99 60%), url(/img/front-pg2.jpeg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -94,9 +94,19 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .descr {
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  .descr:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
   .middle_2 {
-    background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(43, 40, 50, 0.8)), color-stop(45%, rgba(83, 86, 99, 0.8)), color-stop(60%, rgba(69, 77, 91, 0.6))), url(/img/front-pg1.jpeg);
-    background-image: linear-gradient(bottom left, rgba(43, 40, 50, 0.8) 0%, rgba(83, 86, 99, 0.8) 45%, rgba(69, 77, 91, 0.6) 60%), url(/img/front-pg1.jpeg);
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#2b2832cc), color-stop(45%, #535663cc), color-stop(60%, #454d5b99)), url(/img/front-pg1.jpeg);
+    background-image: linear-gradient(bottom left, #2b2832cc 0%, #535663cc 45%, #454d5b99 60%), url(/img/front-pg1.jpeg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -114,8 +124,16 @@ footer {
     border-bottom: outset #fad4c0 7px;
   }
   .sch {
-    color: #FAD4C0;
+    color: #fad4c0;
     text-align: center;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  .sch:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #sh {
     font-size: 2vw;
@@ -160,6 +178,10 @@ footer {
     border-radius: 6px;
     -webkit-box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.31);
             box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.31);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   }
   #img_pres {
     -ms-flex-item-align: center;
