@@ -1,63 +1,43 @@
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Playfair display", sans-serif;
 }
 
-$yellow: #f8e2a7;
-$gradient: linear-gradient(#180b11dc, #151024e1);
-$gradient2: linear-gradient(
-  to right top,
-  #d02626,
-  #d62a23,
-  #db2e1f,
-  #e0321b,
-  #e53715,
-  #e9490f,
-  #ec5907,
-  #ef6800,
-  #f08200,
-  #ee9b00,
-  #ebb300,
-  #e5ca0f
+$red: #812a1a;
+$Silver-Pink: #b09e99;
+$Misty-Rose: #fee9e1;
+$Uncleached-Silk: #fad4c0;
+$Uncleached-Silk-Darker: #dc9a77;
+$Green-Sheen: #64b6ac;
+$Celeste: #c0fdfb;
+$Dark-Grey: #484747;
+$Green-Sky: #396b69;
+$blurred: linear-gradient(
+  bottom left,
+  #564f64d7 0%,
+  #71737ed8 45%,
+  #5c626dcc 60%
 );
-$gradient4: linear-gradient(
-  to right top,
-  #d1d16b,
-  #deb954,
-  #e9a048,
-  #f18448,
-  #f36653,
-  #dd5255,
-  #c54056,
-  #ab3154,
-  #7e2842,
-  #531f2f,
-  #2c151b,
-  #000000
+$blurred2: linear-gradient(
+  bottom left,
+  #2b2832c2 0%,
+  #535663c5 45%,
+  #454d5ba6 60%
 );
-$gradient5: linear-gradient(
-  to right top,
-  #d68f7f,
-  #ac6363,
-  #844c58,
-  #df76d1d3
-);
-$blk: #522353;
-
-$blurred: linear-gradient(bottom left, rgba(126, 125, 128, 0.8) 0%, rgba(156, 157, 161, 0.8) 45%, rgba(157, 160, 165, 0.6) 60%);
 
 body {
   margin: 0;
   padding: 0;
-  background-image: $gradient2;
+  background-image: $blurred;
 }
 a {
   list-style: none;
   text-decoration: none;
-  color: $yellow;
+  color: $Uncleached-Silk;
+  text-shadow: 1px 1px black;
 }
 
 a:hover {
-  color: rgb(194, 153, 221);
+  color: $Green-Sky;
 }
 
 @mixin bck_cov {
@@ -67,18 +47,19 @@ a:hover {
 
 @mixin bullet {
   margin: 10% 35%;
-  border: $blk solid;
-  border-radius: 90px;
-  background-color: $blk;
+  border: $Green-Sky solid;
+  color: $Uncleached-Silk;
+  border-radius: 5px;
+  background-color: $Green-Sky;
   position: relative;
-  box-shadow: 1px 1px 3px 3px rgba(255, 255, 255, 0.116);
+  box-shadow: #00000069 5px 10px 10px 5px;
 }
 
 @media all and (min-device-width: 0*320px) {
   header {
-    background-image: url(/img/treatments-up.jpeg);
+    background-image: $blurred, url(/img/treatments-up.jpeg);
     @include bck_cov();
-    height: 200px;
+    height: 170px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -88,51 +69,67 @@ a:hover {
   h1,
   h2,
   h3 {
-    color: $yellow;
-    font-size: 15px;
+    color: $Uncleached-Silk;
+    font-size: 10px;
     margin-top: 0;
+    text-shadow: 2px 2px black;
+    font-family: Cinzel Decorative;
+    margin-bottom: 15px;
   }
 
   h2,
   h3 {
-    margin-left: 6%;
+    margin-left: 10%;
     margin-right: 8%;
   }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .item1 {
-    background-image: $gradient, url(/images/papaya.jpg);
+    background-image: $blurred2, url(/img/papaya.jpeg);
   }
   .item2 {
-    background-image: $gradient, url(/images/rainshower.jpg);
+    background-image: $blurred2, url(/img/massage.jpeg);
   }
   .item3 {
-    background-image: $gradient, url(/images/back.jpg);
+    background-image: $blurred2, url(/img/back-pain.jpeg);
   }
   .item4 {
-    background-image: $gradient, url(/images/honey.jpg);
+    background-image: $blurred2, url(/img/honey.jpg);
   }
   .item5 {
-    background-image: $gradient, url(/images/coffee.jpg);
+    background-image: $blurred2, url(/img/coffee.jpg);
   }
   .item6 {
-    background-image: $gradient, url(/images/hamam.jpg);
+    background-image: $blurred2, url(/img/hammam.jpeg);
   }
   .item7 {
-    background-image: $gradient, url(/images/chocolate.jpg);
+    background-image: $blurred2, url(/img/chocolate.jpg);
   }
   .item8 {
-    background-image: $gradient, url(/images/scrub.jpg);
+    background-image: $blurred2, url(/img/scrub.jpg);
   }
 
   .shop-item {
     @include bck_cov();
-    color: #ffffff;
+    color: $Uncleached-Silk;
+    text-shadow: 1px 1px black;
     text-align: center;
-    border-radius: 20%;
-    margin: 2% 1%;
+    height: 250px;
+    width: 250px;
+    margin: 10px 0;
+    font-size: 12px;
+    transition: transform 0.5s ease;
+    border-radius: 5px;
+    background-color: $blurred;
   }
 
   .shop-item:hover {
-    background-image: $gradient5;
+    transform: scale(1.2);
+    background-image: none;
   }
 
   p {
@@ -141,19 +138,25 @@ a:hover {
 
   .minutes {
     @include bullet();
-    top: 10px;
+    margin-top: 10px;
   }
 
   .item-price {
     @include bullet();
     bottom: 10px;
   }
+  .treatments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media all and (min-device-width: 768px) {
   header {
-    background-image: url(/images/background_top.png);
-    height: 200px;
+    background-image: $blurred, url(/img/treatments-up.jpeg);
+    height: 250px;
   }
 
   h1,
@@ -183,28 +186,32 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     margin: 5%;
-    grid-gap: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    align-items: center;
   }
 
   .shop-item {
-    border-radius: 5%;
+    place-self: center;
+    border-radius: 5px;
   }
 
   body {
-    background-image: $gradient4;
+    background-image: $blurred;
   }
 }
 
 @media all and (min-device-width: 1080px) {
   header {
-    background-image:$blurred, url(/img/treatments-up.jpeg);
+    background-image: $blurred, url(/img/treatments-up.jpeg);
     height: 300px;
+    border-bottom: solid 5px $Uncleached-Silk-Darker;
   }
 
   h1,
   h2,
   h3 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: x-large;
   }
 
@@ -215,12 +222,15 @@ a:hover {
   }
 
   body {
-    background-image: $blurred, url(/images/treatment.jpeg);
+    background-image: $blurred, url(/img/treatments2.jpeg);
   }
 
   .shop-item {
-    margin: 5% 10%;
+    margin: 15% 10%;
     border-radius: 2%;
-    box-shadow: 5px 5px 10px 10px #0000007c;
+    box-shadow: #00000069 5px 10px 10px 5px;
+    height: 350px;
+    width: 350px;
+    font-size: 18px;
   }
 }
