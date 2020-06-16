@@ -1,19 +1,18 @@
-body{
-    background-image: url(/images/background_footer.jpg);
-    
-  
+body {
+  background-image: url(/img/welcome.jpeg);
 }
 
-*{
-    font-family: 'Open Sans', sans-serif;
+* {
+  font-family: "Cinzel Decorativ", sans-serif;
 }
 
-h1{
-    color: #dad161;
-    padding:20%;
+h1 {
+  color: #396b69;
+  padding: 15%;
+  text-shadow: 1px 1px #64b6ac;
 }
 
-a{
-    list-style: none;
-    text-decoration: none;
+a {
+  list-style: none;
+  text-decoration: none;
 }

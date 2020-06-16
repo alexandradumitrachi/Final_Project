@@ -11,8 +11,8 @@ a {
   text-decoration: none;
   border-radius: 20px;
   border: #fad4c0;
-  -webkit-box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.42);
-          box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.42);
+  -webkit-box-shadow: 2px 2px 2px 2px #fad4c06b;
+          box-shadow: 2px 2px 2px 2px #fad4c06b;
   background-size: 100%;
   font-size: 3vw;
   color: #fad4c0;
@@ -176,8 +176,8 @@ footer {
     width: 80vw;
     height: 50vw;
     border-radius: 6px;
-    -webkit-box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.31);
-            box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.31);
+    -webkit-box-shadow: 2px 2px 2px 2px #fad4c04f;
+            box-shadow: 2px 2px 2px 2px #fad4c04f;
     -webkit-transition: -webkit-transform 0.5s ease;
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
@@ -210,8 +210,8 @@ footer {
         -ms-grid-row-align: center;
         align-self: center;
     border-radius: 7px;
-    -webkit-box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.31);
-            box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.31);
+    -webkit-box-shadow: 2px 2px 2px 2px #fad4c04f;
+            box-shadow: 2px 2px 2px 2px #fad4c04f;
   }
   .map {
     margin-left: 15%;

@@ -35,7 +35,7 @@ a {
   text-decoration: none;
   border-radius: 20px;
   border: $Uncleached-Silk;
-  box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.42);
+  box-shadow: 2px 2px 2px 2px #fad4c06b;
   background-size: 100%;
   font-size: 3vw;
   color: $Uncleached-Silk;
@@ -173,7 +173,7 @@ footer {
     width: 80vw;
     height: 50vw;
     border-radius: 6px;
-    box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.31);
+    box-shadow: 2px 2px 2px 2px #fad4c04f;
     transition: transform 0.5s ease;
   }
 
@@ -197,7 +197,7 @@ footer {
     width: 80%;
     align-self: center;
     border-radius: 7px;
-    box-shadow: 2px 2px 2px 2px rgba(250, 212, 192, 0.31);
+    box-shadow: 2px 2px 2px 2px #fad4c04f;
   }
 
   .map {
