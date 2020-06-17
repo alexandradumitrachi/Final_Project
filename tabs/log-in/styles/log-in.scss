@@ -2,7 +2,7 @@
   font-family: "Playfair display", sans-serif;
 }
 
-$redo: #e9432dab;
+$redo: #e92d2d6c;
 
 $blurred: linear-gradient(
   bottom left,
@@ -44,11 +44,13 @@ body {
   height: 30px;
   border: solid 2px $redo;
   display: none;
+  border-radius: 5px;
 }
 
 h1 {
   color: $Green-Sheen;
   text-shadow: 1px 1px black;
+  font-family: "Cinzel Decorative";
 }
 a {
   text-decoration: none;
@@ -61,14 +63,12 @@ a:hover {
 
 #home {
   margin-top: 10px;
-
   border-radius: 20px;
   border: $Uncleached-Silk;
   box-shadow: 2px 2px 2px 2px #fad4c06b;
   background-size: 100%;
   font-size: 1vw;
   padding: 5px 10px;
-
   text-shadow: 1px 1px black;
 }
 
@@ -84,6 +84,7 @@ a:hover {
   background-color: $Green-Sheen;
   border: $Green-Sheen solid 1px;
   height: 30px;
+  border-radius: 5px;
 }
 
 .register {

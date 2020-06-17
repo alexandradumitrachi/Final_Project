@@ -25,19 +25,21 @@ body {
 
 .faulty {
   color: #484747;
-  background-color: #e9432dab;
+  background-color: #e92d2d6c;
   font-weight: bold;
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
   height: 30px;
-  border: solid 2px #e9432dab;
+  border: solid 2px #e92d2d6c;
   display: none;
+  border-radius: 5px;
 }
 
 h1 {
   color: #64b6ac;
   text-shadow: 1px 1px black;
+  font-family: "Cinzel Decorative";
 }
 
 a {
@@ -74,6 +76,7 @@ a:hover {
   background-color: #64b6ac;
   border: #64b6ac solid 1px;
   height: 30px;
+  border-radius: 5px;
 }
 
 .register {
