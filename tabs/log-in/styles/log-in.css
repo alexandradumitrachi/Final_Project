@@ -41,18 +41,32 @@ h1 {
 }
 
 a {
-  list-style: none;
   text-decoration: none;
-  border-radius: 50%;
-  padding: 5px;
-  color: #484747;
-  position: relative;
-  top: 10px;
-  font-style: "Cinzel Decorative";
+  color: #fad4c0;
 }
 
 a:hover {
-  color: #fad4c0;
+  color: #396b69;
+}
+
+#home {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: #fad4c0;
+  -webkit-box-shadow: 2px 2px 2px 2px #fad4c06b;
+          box-shadow: 2px 2px 2px 2px #fad4c06b;
+  background-size: 100%;
+  font-size: 1vw;
+  padding: 5px 10px;
+  text-shadow: 1px 1px black;
+}
+
+#home:hover,
+#home:active {
+  background-color: #fad4c0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #396b69;
 }
 
 .box {
@@ -118,10 +132,6 @@ a:hover {
 }
 
 @media all and (min-width: 1080px) {
-  #home {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
   .form {
     margin-left: 40%;
     margin-bottom: 8%;

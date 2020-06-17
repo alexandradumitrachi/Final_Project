@@ -33,21 +33,30 @@ body {
 }
 
 a {
-  list-style: none;
+  margin-top: 10px;
   text-decoration: none;
+  border-radius: 20px;
+  border: $Uncleached-Silk;
+  box-shadow: 2px 2px 2px 2px #fad4c06b;
+  background-size: 100%;
+  font-size: 1vw;
+  padding: 5px 10px ;
   color: $Uncleached-Silk;
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 1px black;
 }
 
-a:hover {
-  color: $Uncleached-Silk-Darker;
+a:hover,
+a:active {
+  background-color: $Uncleached-Silk;
+  transition: 0.2s;
+  color: $Green-Sky;
 }
 
 ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 0;
   font-size: 15px;
 }

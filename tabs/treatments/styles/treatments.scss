@@ -30,13 +30,22 @@ body {
   background-image: $blurred;
 }
 a {
-  list-style: none;
+  margin-top: 10px;
   text-decoration: none;
+  border-radius: 20px;
+  border: $Uncleached-Silk;
+  box-shadow: 2px 2px 2px 2px #fad4c06b;
+  background-size: 100%;
+  font-size: 1vw;
+  padding: 5px 10px;
   color: $Uncleached-Silk;
   text-shadow: 1px 1px black;
 }
 
-a:hover {
+a:hover,
+a:active {
+  background-color: $Uncleached-Silk;
+  transition: 0.2s;
   color: $Green-Sky;
 }
 
@@ -56,9 +65,12 @@ a:hover {
 }
 
 @media all and (min-device-width: 0*320px) {
+  body {
+    @include bck_cov;
+    background-image: $blurred, url(/img/treatments2.jpeg);
+  }
+
   header {
-    background-image: $blurred, url(/img/treatments-up.jpeg);
-    @include bck_cov();
     height: 170px;
     width: 100%;
     margin: 0;
@@ -81,6 +93,11 @@ a:hover {
   h3 {
     margin-left: 10%;
     margin-right: 8%;
+  }
+
+  h3 {
+    color: $Green-Sheen;
+    text-shadow: 2px 2px black;
   }
 
   .buttons {
@@ -154,8 +171,10 @@ a:hover {
 }
 
 @media all and (min-device-width: 768px) {
+  body {
+    background-image: $blurred, url(/img/treatments2.jpeg);
+  }
   header {
-    background-image: $blurred, url(/img/treatments-up.jpeg);
     height: 250px;
   }
 
@@ -195,17 +214,12 @@ a:hover {
     place-self: center;
     border-radius: 5px;
   }
-
-  body {
-    background-image: $blurred;
-  }
 }
 
 @media all and (min-device-width: 1080px) {
   header {
-    background-image: $blurred, url(/img/treatments-up.jpeg);
+    // background-image: $blurred, url(/img/treatments-up.jpeg);
     height: 300px;
-    border-bottom: solid 5px $Uncleached-Silk-Darker;
   }
 
   h1,
@@ -219,10 +233,6 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     margin: 0 5%;
-  }
-
-  body {
-    background-image: $blurred, url(/img/treatments2.jpeg);
   }
 
   .shop-item {

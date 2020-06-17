@@ -10,22 +10,35 @@ body {
 }
 
 a {
-  list-style: none;
+  margin-top: 10px;
   text-decoration: none;
+  border-radius: 20px;
+  border: #fad4c0;
+  -webkit-box-shadow: 2px 2px 2px 2px #fad4c06b;
+          box-shadow: 2px 2px 2px 2px #fad4c06b;
+  background-size: 100%;
+  font-size: 1vw;
+  padding: 5px 10px;
   color: #fad4c0;
   text-shadow: 1px 1px black;
 }
 
-a:hover {
+a:hover,
+a:active {
+  background-color: #fad4c0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   color: #396b69;
 }
 
 @media all and (min-device-width: 0px) {
-  header {
-    background-image: -webkit-gradient(linear, left bottom, right top, from(#564f64d7), color-stop(45%, #71737ed8), color-stop(60%, #5c626dcc)), url(/img/treatments-up.jpeg);
-    background-image: linear-gradient(bottom left, #564f64d7 0%, #71737ed8 45%, #5c626dcc 60%), url(/img/treatments-up.jpeg);
+  body {
     background-size: cover;
     background-position: center;
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#564f64d7), color-stop(45%, #71737ed8), color-stop(60%, #5c626dcc)), url(/img/treatments2.jpeg);
+    background-image: linear-gradient(bottom left, #564f64d7 0%, #71737ed8 45%, #5c626dcc 60%), url(/img/treatments2.jpeg);
+  }
+  header {
     height: 170px;
     width: 100%;
     margin: 0;
@@ -46,6 +59,10 @@ a:hover {
   h3 {
     margin-left: 10%;
     margin-right: 8%;
+  }
+  h3 {
+    color: #64b6ac;
+    text-shadow: 2px 2px black;
   }
   .buttons {
     display: -webkit-box;
@@ -155,9 +172,11 @@ a:hover {
 }
 
 @media all and (min-device-width: 768px) {
+  body {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#564f64d7), color-stop(45%, #71737ed8), color-stop(60%, #5c626dcc)), url(/img/treatments2.jpeg);
+    background-image: linear-gradient(bottom left, #564f64d7 0%, #71737ed8 45%, #5c626dcc 60%), url(/img/treatments2.jpeg);
+  }
   header {
-    background-image: -webkit-gradient(linear, left bottom, right top, from(#564f64d7), color-stop(45%, #71737ed8), color-stop(60%, #5c626dcc)), url(/img/treatments-up.jpeg);
-    background-image: linear-gradient(bottom left, #564f64d7 0%, #71737ed8 45%, #5c626dcc 60%), url(/img/treatments-up.jpeg);
     height: 250px;
   }
   h1,
@@ -195,18 +214,11 @@ a:hover {
     place-self: center;
     border-radius: 5px;
   }
-  body {
-    background-image: -webkit-gradient(linear, left bottom, right top, from(#564f64d7), color-stop(45%, #71737ed8), color-stop(60%, #5c626dcc));
-    background-image: linear-gradient(bottom left, #564f64d7 0%, #71737ed8 45%, #5c626dcc 60%);
-  }
 }
 
 @media all and (min-device-width: 1080px) {
   header {
-    background-image: -webkit-gradient(linear, left bottom, right top, from(#564f64d7), color-stop(45%, #71737ed8), color-stop(60%, #5c626dcc)), url(/img/treatments-up.jpeg);
-    background-image: linear-gradient(bottom left, #564f64d7 0%, #71737ed8 45%, #5c626dcc 60%), url(/img/treatments-up.jpeg);
     height: 300px;
-    border-bottom: solid 5px #dc9a77;
   }
   h1,
   h2,
@@ -220,10 +232,6 @@ a:hover {
     -ms-grid-columns: (25%)[4];
         grid-template-columns: repeat(4, 25%);
     margin: 0 5%;
-  }
-  body {
-    background-image: -webkit-gradient(linear, left bottom, right top, from(#564f64d7), color-stop(45%, #71737ed8), color-stop(60%, #5c626dcc)), url(/img/treatments2.jpeg);
-    background-image: linear-gradient(bottom left, #564f64d7 0%, #71737ed8 45%, #5c626dcc 60%), url(/img/treatments2.jpeg);
   }
   .shop-item {
     margin: 15% 10%;

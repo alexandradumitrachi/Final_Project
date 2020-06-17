@@ -50,20 +50,33 @@ h1 {
   color: $Green-Sheen;
   text-shadow: 1px 1px black;
 }
-
 a {
-  list-style: none;
   text-decoration: none;
-  border-radius: 50%;
-  padding: 5px;
-  color: $Dark-Grey;
-  position: relative;
-  top: 10px;
-  font-style: "Cinzel Decorative";
+  color: $Uncleached-Silk;
 }
 
 a:hover {
-  color: $Uncleached-Silk;
+  color: $Green-Sky;
+}
+
+#home {
+  margin-top: 10px;
+
+  border-radius: 20px;
+  border: $Uncleached-Silk;
+  box-shadow: 2px 2px 2px 2px #fad4c06b;
+  background-size: 100%;
+  font-size: 1vw;
+  padding: 5px 10px;
+
+  text-shadow: 1px 1px black;
+}
+
+#home:hover,
+#home:active {
+  background-color: $Uncleached-Silk;
+  transition: 0.2s;
+  color: $Green-Sky;
 }
 
 .box {
@@ -127,10 +140,6 @@ a:hover {
 }
 
 @media all and (min-width: 1080px) {
-  #home {
-    align-self: flex-end;
-  }
-
   .form {
     margin-left: 40%;
     margin-bottom: 8%;
