@@ -64,7 +64,7 @@ a:active {
   box-shadow: #00000069 5px 10px 10px 5px;
 }
 
-@media all and (min-device-width: 0*320px) {
+@media all and (min-width: 0*320px) {
   body {
     @include bck_cov;
     background-image: $blurred, url(/img/treatments2.jpeg);
@@ -170,7 +170,7 @@ a:active {
   }
 }
 
-@media all and (min-device-width: 768px) {
+@media all and (min-width: 768px) {
   body {
     background-image: $blurred, url(/img/treatments2.jpeg);
   }
@@ -216,7 +216,7 @@ a:active {
   }
 }
 
-@media all and (min-device-width: 1080px) {
+@media all and (min-width: 1080px) and (max-width: 5000px) {
   header {
     // background-image: $blurred, url(/img/treatments-up.jpeg);
     height: 300px;
@@ -231,16 +231,21 @@ a:active {
 
   .treatments {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 2%;
     margin: 0 5%;
+  }
+
+  .description {
+    font-size: x-large;
   }
 
   .shop-item {
     margin: 15% 10%;
     border-radius: 2%;
     box-shadow: #00000069 5px 10px 10px 5px;
-    height: 350px;
-    width: 350px;
+    height: 450px;
+    width: 450px;
     font-size: 18px;
   }
 }

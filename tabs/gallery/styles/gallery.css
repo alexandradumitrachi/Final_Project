@@ -45,7 +45,7 @@ body {
   color: #396b69;
 }
 
-@media all and (min-device-width: 0px) {
+@media all and (min-width: 0px) {
   .buttons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -93,11 +93,12 @@ body {
             flex-direction: column;
   }
   .image {
-    width: 300px;
+    width: 250px;
     height: 200px;
     border-radius: 2%;
     -webkit-transition: 1s;
     transition: 1s;
+    margin-bottom: 10%;
   }
   .image:hover {
     -webkit-filter: sepia(30%);
@@ -107,7 +108,7 @@ body {
   }
 }
 
-@media all and (min-device-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 1080px) {
   header {
     height: 250px;
   }
@@ -135,12 +136,12 @@ body {
             align-items: center;
   }
   .image {
-    width: 400px;
+    width: 350px;
     height: 300px;
   }
 }
 
-@media all and (min-device-width: 1080px) {
+@media all and (min-width: 1080px) and (max-width: 5000px) {
   header {
     height: 300px;
   }
@@ -150,11 +151,16 @@ body {
     margin-bottom: 30px;
     font-size: x-large;
   }
+  .image {
+    width: 400px;
+    height: 300px;
+  }
   .gallery {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (25%)[4];
         grid-template-columns: repeat(4, 25%);
+    grid-gap: 2%;
     margin: 0 5%;
   }
 }

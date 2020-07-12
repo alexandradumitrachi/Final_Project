@@ -90,7 +90,7 @@ footer {
 
 // Phone Display
 
-@media all and (min-device-width: 0*320px) {
+@media all and (min-width: 0*320px) {
   h1 {
     font-size: 20px;
     padding: 10% 0;
@@ -231,7 +231,7 @@ footer {
 
 // Tablet Display
 
-@media all and (min-device-width: 768px) {
+@media all and (min-width: 768px) {
   h1 {
     padding-bottom: 10%;
     padding-top: 0;
@@ -297,7 +297,7 @@ footer {
 
 //Desktop Display
 
-@media all and (min-width: 1080px) {
+@media all and (min-width: 1080px) and (max-width: 5000px) {
   header {
     height: 300px;
   }
@@ -318,7 +318,10 @@ footer {
   }
 
   .middle_1 {
-    height: 700px;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   .middle_2 {
     height: 900px;

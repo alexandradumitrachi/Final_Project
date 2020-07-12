@@ -31,7 +31,7 @@ a:active {
   color: #396b69;
 }
 
-@media all and (min-device-width: 0px) {
+@media all and (min-width: 0px) {
   body {
     background-size: cover;
     background-position: center;
@@ -171,7 +171,7 @@ a:active {
   }
 }
 
-@media all and (min-device-width: 768px) {
+@media all and (min-width: 768px) {
   body {
     background-image: -webkit-gradient(linear, left bottom, right top, from(#564f64d7), color-stop(45%, #71737ed8), color-stop(60%, #5c626dcc)), url(/img/treatments2.jpeg);
     background-image: linear-gradient(bottom left, #564f64d7 0%, #71737ed8 45%, #5c626dcc 60%), url(/img/treatments2.jpeg);
@@ -216,7 +216,7 @@ a:active {
   }
 }
 
-@media all and (min-device-width: 1080px) {
+@media all and (min-width: 1080px) and (max-width: 5000px) {
   header {
     height: 300px;
   }
@@ -229,17 +229,21 @@ a:active {
   .treatments {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (25%)[4];
-        grid-template-columns: repeat(4, 25%);
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    grid-gap: 2%;
     margin: 0 5%;
+  }
+  .description {
+    font-size: x-large;
   }
   .shop-item {
     margin: 15% 10%;
     border-radius: 2%;
     -webkit-box-shadow: #00000069 5px 10px 10px 5px;
             box-shadow: #00000069 5px 10px 10px 5px;
-    height: 350px;
-    width: 350px;
+    height: 450px;
+    width: 450px;
     font-size: 18px;
   }
 }

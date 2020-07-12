@@ -71,7 +71,7 @@ footer {
   color: #d0517b;
 }
 
-@media all and (min-device-width: 0px) {
+@media all and (min-width: 0px) {
   h1 {
     font-size: 20px;
     padding: 10% 0;
@@ -254,7 +254,7 @@ footer {
   }
 }
 
-@media all and (min-device-width: 768px) {
+@media all and (min-width: 768px) {
   h1 {
     padding-bottom: 10%;
     padding-top: 0;
@@ -326,7 +326,7 @@ footer {
   }
 }
 
-@media all and (min-width: 1080px) {
+@media all and (min-width: 1080px) and (max-width: 5000px) {
   header {
     height: 300px;
   }
@@ -350,7 +350,17 @@ footer {
             justify-content: space-evenly;
   }
   .middle_1 {
-    height: 700px;
+    height: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .middle_2 {
     height: 900px;
